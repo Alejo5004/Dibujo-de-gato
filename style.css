@@ -2,7 +2,7 @@
     --border: rgb(41, 41, 41);
     --color-lines: rgb(190, 45, 45);
     --cat-color: rgb(173, 161, 161);
-    --grid-size: 15px;
+    --grid-size: 10px;
     --pupil-color: rgb(63, 132, 23);
     --ears-color: rgb(243, 173, 185);
     --secundary-color: rgb(246, 236, 236);
@@ -14,7 +14,8 @@
 .wrapper{
     display: grid;
     grid-template-columns: repeat(50, var(--grid-size));
-    grid-template-rows: repeat(80, var(--grid-size));
+    grid-template-rows: repeat(62, var(--grid-size));
+    justify-content: center;
 }
 
 .sub-1{
