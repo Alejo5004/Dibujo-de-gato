@@ -1,21 +1,44 @@
 :root{
-    --border: rgb(41, 41, 41);
-    --color-lines: rgb(190, 45, 45);
-    --cat-color: rgb(173, 161, 161);
     --grid-size: 10px;
-    --pupil-color: rgb(63, 132, 23);
-    --ears-color: rgb(243, 173, 185);
-    --secundary-color: rgb(246, 236, 236);
-    --eyes-color: rgb(223, 223, 223);
-    --moustache: rgb(75, 24, 1);
+    --border: #292929;
+    --cat-color: #ADA1A1;
+    --secundary-color: #F6ECEC;
+    --color-lines: #BE2D2D;
+    --ears-color: #F3ADB9;
+    --pupil-color: #3F8417;
+    --eyes-color: #FBFBFB;
+    --moustache: #4B1801;
     --language: rgb(233, 7, 7);
+}
+
+.h-full{
+    height: 100vh;
+}
+@media(max-width: 546px){
+    .h-full{
+        height: auto;
+    }
+}
+#cat{
+    z-index: 1;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+#menu{
+    z-index: 2;
+}
+
+.input-color{
+    padding: 0;
 }
 
 .wrapper{
     display: grid;
     grid-template-columns: repeat(50, var(--grid-size));
     grid-template-rows: repeat(62, var(--grid-size));
-    justify-content: center;
+    justify-content: start;
+    align-self: center;
 }
 
 .sub-1{
