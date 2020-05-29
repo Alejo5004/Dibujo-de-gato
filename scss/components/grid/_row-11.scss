@@ -1,0 +1,29 @@
+@import '../mixin';
+
+$row:(
+    numberRow: 11,
+    sizeRow: #{21} / #{28}
+);
+
+$sub: (
+    2: (
+        valueColor: var(--color-lines),
+        valueSize:(
+            begin: 2,
+            finish: 7
+        )
+    ),
+    3: (
+        valueColor: var(--border),
+        valueSize: (
+            begin: 7,
+            finish: 8
+        )
+    )
+);
+
+$minSub : 2;
+
+$maxSub: 3;
+
+@include createRow($row, $sub, $minSub, $maxSub);

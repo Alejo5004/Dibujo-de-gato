@@ -1,0 +1,50 @@
+@import '../mixin';
+
+$row:(
+    numberRow: 13,
+    sizeRow: #{1} / #{50}
+);
+
+$sub: (
+    1: (
+        valueColor: var(--border),
+        valueSize:(
+            begin: 2,
+            finish: 5
+        )
+    ),
+    2: (
+        valueColor: var(--border),
+        valueSize:(
+            begin: 21,
+            finish: 22
+        )
+    ),
+    3: (
+        valueColor: var(--color-lines),
+        valueSize: (
+            begin: 22,
+            finish: 27
+        )
+    ),
+    4: (
+        valueColor: var(--border),
+        valueSize: (
+            begin: 27,
+            finish: 28
+        )
+    ),
+    5: (
+        valueColor: var(--border),
+        valueSize: (
+            begin: 47,
+            finish: 50
+        )
+    )
+);
+
+$minSub : 1;
+
+$maxSub: 5;
+
+@include createRow($row, $sub, $minSub, $maxSub);
