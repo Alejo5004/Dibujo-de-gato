@@ -1,0 +1,24 @@
+@import 'create-sub';
+
+@mixin createRow($row, $sub, $minSub, $maxSub){
+
+    $numberRow: map-get($row, numberRow);
+    $sizeRow: map-get($row, sizeRow);
+
+    .row-#{$numberRow}{
+        display: inherit;
+        grid-row: $numberRow;
+        grid-column: $sizeRow;
+        
+        @for $i from $minSub through $maxSub{
+
+            $data: map-get($sub, $i);
+            $color: map-get($data, valueColor);
+            $size: map-get($data, valueSize);
+
+            .sub-#{$i}{
+                @include createSub($color, $size);
+            }
+        }
+    }
+}

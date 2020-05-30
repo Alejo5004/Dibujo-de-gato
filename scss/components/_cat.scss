@@ -1,0 +1,75 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(50, var(--grid-size));
+    grid-template-rows: repeat(62, var(--grid-size));
+    justify-content: start;
+    align-self: center;
+}
+
+.sub-1{
+    background-color: var(--border);
+    grid-column: 1 / 2;
+}
+
+@import 'components/cat/grid-row/row-1';
+@import 'components/cat/grid-row/row-2';
+@import 'components/cat/grid-row/row-3';
+@import 'components/cat/grid-row/row-4';
+@import 'components/cat/grid-row/row-5';
+@import 'components/cat/grid-row/row-6';
+@import 'components/cat/grid-row/row-7';
+@import 'components/cat/grid-row/row-8';
+@import 'components/cat/grid-row/row-9';
+@import 'components/cat/grid-row/row-10';
+@import 'components/cat/grid-row/row-11';
+@import 'components/cat/grid-row/row-12';
+@import 'components/cat/grid-row/row-13';
+@import 'components/cat/grid-row/row-14';
+@import 'components/cat/grid-row/row-15';
+@import 'components/cat/grid-row/row-16';
+@import 'components/cat/grid-row/row-17';
+@import 'components/cat/grid-row/row-18';
+@import 'components/cat/grid-row/row-19';
+@import 'components/cat/grid-row/row-20';
+@import 'components/cat/grid-row/row-21';
+@import 'components/cat/grid-row/row-22';
+@import 'components/cat/grid-row/row-23';
+@import 'components/cat/grid-row/row-24';
+@import 'components/cat/grid-row/row-25';
+@import 'components/cat/grid-row/row-26';
+@import 'components/cat/grid-row/row-27';
+@import 'components/cat/grid-row/row-28';
+@import 'components/cat/grid-row/row-29';
+@import 'components/cat/grid-row/row-30';
+@import 'components/cat/grid-row/row-31';
+@import 'components/cat/grid-row/row-32';
+@import 'components/cat/grid-row/row-33';
+@import 'components/cat/grid-row/row-34';
+@import 'components/cat/grid-row/row-35';
+@import 'components/cat/grid-row/row-36';
+@import 'components/cat/grid-row/row-37';
+@import 'components/cat/grid-row/row-38';
+@import 'components/cat/grid-row/row-39';
+@import 'components/cat/grid-row/row-40';
+@import 'components/cat/grid-row/row-41';
+@import 'components/cat/grid-row/row-42';
+@import 'components/cat/grid-row/row-43';
+@import 'components/cat/grid-row/row-44';
+@import 'components/cat/grid-row/row-45';
+@import 'components/cat/grid-row/row-46';
+@import 'components/cat/grid-row/row-47';
+@import 'components/cat/grid-row/row-48';
+@import 'components/cat/grid-row/row-49';
+@import 'components/cat/grid-row/row-50';
+@import 'components/cat/grid-row/row-51';
+@import 'components/cat/grid-row/row-52';
+@import 'components/cat/grid-row/row-53';
+@import 'components/cat/grid-row/row-54';
+@import 'components/cat/grid-row/row-55';
+@import 'components/cat/grid-row/row-56';
+@import 'components/cat/grid-row/row-57';
+@import 'components/cat/grid-row/row-58';
+@import 'components/cat/grid-row/row-59';
+@import 'components/cat/grid-row/row-60';
+@import 'components/cat/grid-row/row-61';
+@import 'components/cat/grid-row/row-62';

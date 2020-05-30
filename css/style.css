@@ -10,23 +10,19 @@
   --moustache: #4B1801;
   --language: #e90707; }
 
-.h-full {
-  height: 100vh; }
-
 #cat {
   z-index: 1;
   max-height: 100vh;
   overflow: auto; }
+
+.h-full {
+  height: 100vh; }
 
 #menu {
   z-index: 2; }
 
 .input-color {
   padding: 0; }
-
-.sub-1 {
-  background-color: var(--border);
-  grid-column: 1 / 2; }
 
 @media (max-width: 546px) {
   .h-full {
@@ -37,6 +33,10 @@
   grid-template-rows: repeat(62, var(--grid-size));
   justify-content: start;
   align-self: center; }
+
+.sub-1 {
+  background-color: var(--border);
+  grid-column: 1 / 2; }
 
 .row-1 {
   background-color: var(--border);

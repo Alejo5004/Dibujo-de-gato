@@ -1,0 +1,7 @@
+@mixin createSub($color, $value) {
+    $start: map-get($value, begin);
+    $end: map-get($value, finish);
+
+    background-color: $color;
+    grid-column: #{$start} / #{$end};
+}

@@ -1,8 +1,0 @@
-
-.wrapper{
-    display: grid;
-    grid-template-columns: repeat(50, var(--grid-size));
-    grid-template-rows: repeat(62, var(--grid-size));
-    justify-content: start;
-    align-self: center;
-}

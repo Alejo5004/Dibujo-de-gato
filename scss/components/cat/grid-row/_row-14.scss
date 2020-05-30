@@ -1,0 +1,78 @@
+@import '../create-row';
+
+$row:(
+    numberRow: 14,
+    sizeRow: #{1} / #{51}
+);
+
+$sub: (
+    1: (
+        valueColor: var(--border),
+        valueSize:(
+            begin: 1,
+            finish: 3
+        )
+    ),
+    2: (
+        valueColor: var(--cat-color),
+        valueSize:(
+            begin: 3,
+            finish: 5
+        )
+    ),
+    3: (
+        valueColor: var(--border),
+        valueSize: (
+            begin: 5,
+            finish: 8
+        )
+    ),
+    4: (
+        valueColor: var(--border),
+        valueSize: (
+            begin: 21,
+            finish: 22
+        )
+    ),
+    5: (
+        valueColor: var(--cat-color),
+        valueSize: (
+            begin: 22,
+            finish: 27
+        )
+    ),
+    6: (
+        valueColor: var(--border),
+        valueSize: (
+            begin: 27,
+            finish: 28
+        )
+    ),
+    7: (
+        valueColor: var(--border),
+        valueSize: (
+            begin: 44,
+            finish: 47
+        )
+    ),
+    8: (
+        valueColor: var(--cat-color),
+        valueSize: (
+            begin: 47,
+            finish: 49
+        )
+    ),
+    9: (
+        valueColor: var(--border),
+        valueSize: (
+            begin: 49,
+            finish: 51
+        )
+    )
+);
+
+$minSub : 1;
+
+$maxSub: 9;
+
+@include createRow($row, $sub, $minSub, $maxSub);

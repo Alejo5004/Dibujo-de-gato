@@ -1,22 +1,5 @@
-.h-full{
-    height: 100vh;
-}
-
 #cat{
     z-index: 1;
     max-height: 100vh;
     overflow: auto;
-}
-
-#menu{
-    z-index: 2;
-}
-
-.input-color{
-    padding: 0;
-}
-
-.sub-1{
-    background-color: var(--border);
-    grid-column: 1 / 2;
 }
