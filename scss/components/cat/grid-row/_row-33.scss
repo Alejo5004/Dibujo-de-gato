@@ -1,0 +1,113 @@
+@import '../create-row';
+
+$row:(
+    numberRow: 33,
+    sizeRow: #{3} / #{49}
+);
+
+$sub: (
+    2: (
+        valueColor: var(--cat-color),
+        valueSize:(
+            begin:  2,
+            finish: 3
+        )
+    ),
+    3: (
+        valueColor: var(--ears-color),
+        valueSize: (
+            begin:  3,
+            finish: 5
+        )
+    ),
+    4: (
+        valueColor: var(--cat-color),
+        valueSize: (
+            begin: 5,
+            finish: 8
+        )
+    ),
+    5: (
+        valueColor: var(--border),
+        valueSize: (
+            begin: 8,
+            finish: 9
+        )
+    ),
+    6: (
+        valueColor: var(--eyes-color),
+        valueSize: (
+            begin: 9,
+            finish: 15
+        )
+    ),
+    7: (
+        valueColor: var(--border),
+        valueSize: (
+            begin: 15,
+            finish: 16
+        )
+    ),
+    8: (
+        valueColor: var(--secundary-color),
+        valueSize: (
+            begin: 16,
+            finish: 31
+        )
+    ),
+    9: (
+        valueColor: var(--border),
+        valueSize: (
+            begin: 31,
+            finish: 32
+        )
+    ),
+    10: (
+        valueColor: var(--eyes-color),
+        valueSize: (
+            begin: 32,
+            finish: 39
+        )
+    ),
+    11: (
+        valueColor: var(--border),
+        valueSize: (
+            begin: 39,
+            finish: 40
+        )
+    ),
+    12: (
+        valueColor: var(--cat-color),
+        valueSize: (
+            begin: 40,
+            finish: 43
+        )
+    ),
+    13: (
+        valueColor: var(--ears-color),
+        valueSize: (
+            begin: 43,
+            finish: 45
+        )
+    ),
+    14: (
+        valueColor: var(--cat-color),
+        valueSize: (
+            begin: 45,
+            finish: 46
+        )
+    ),
+    15: (
+        valueColor: var(--border),
+        valueSize: (
+            begin: 46,
+            finish: 47
+        )
+    )
+);
+
+$minSub : 2;
+
+$maxSub: 15;
+
+@include createRow($row, $sub, $minSub, $maxSub);

@@ -1,0 +1,134 @@
+@import '../create-row';
+
+$row:(
+    numberRow: 29,
+    sizeRow: #{2} / #{50}
+);
+
+$sub: (
+    2: (
+        valueColor: var(--cat-color),
+        valueSize:(
+            begin:  2,
+            finish: 3
+        )
+    ),
+    3: (
+        valueColor: var(--ears-color),
+        valueSize: (
+            begin:  3,
+            finish: 9
+        )
+    ),
+    4: (
+        valueColor: var(--cat-color),
+        valueSize: (
+            begin: 9,
+            finish: 13
+        )
+    ),
+    5: (
+        valueColor: var(--color-lines),
+        valueSize: (
+            begin: 13,
+            finish: 14
+        )
+    ),
+    6: (
+        valueColor: var(--cat-color),
+        valueSize: (
+            begin: 14,
+            finish: 15
+        )
+    ),
+    7: (
+        valueColor: var(--color-lines),
+        valueSize: (
+            begin: 15,
+            finish: 16
+        )
+    ),
+    8: (
+        valueColor: var(--cat-color),
+        valueSize: (
+            begin: 16,
+            finish: 18
+        )
+    ),
+    9: (
+        valueColor: var(--color-lines),
+        valueSize: (
+            begin: 18,
+            finish: 19
+        )
+    ),
+    10: (
+        valueColor: var(--secundary-color),
+        valueSize: (
+            begin: 19,
+            finish: 28
+        )
+    ),
+    11: (
+        valueColor: var(--cat-color),
+        valueSize: (
+            begin: 28,
+            finish: 31
+        )
+    ),
+    12: (
+        valueColor: var(--color-lines),
+        valueSize: (
+            begin: 31,
+            finish: 32
+        )
+    ),
+    13: (
+        valueColor: var(--cat-color),
+        valueSize: (
+            begin: 32,
+            finish: 36
+        )
+    ),
+    14: (
+        valueColor: var(--color-lines),
+        valueSize: (
+            begin: 36,
+            finish: 37
+        )
+    ),
+    15: (
+        valueColor:var(--cat-color),
+        valueSize: (
+            begin: 37,
+            finish: 41
+        )
+    ),
+    16: (
+        valueColor: var(--ears-color),
+        valueSize: (
+            begin: 41,
+            finish: 47
+        )
+    ),
+    17: (
+        valueColor: var(--cat-color),
+        valueSize: (
+            begin: 47,
+            finish: 48
+        )
+    ),
+    18: (
+        valueColor: var(--border),
+        valueSize: (
+            begin: 48,
+            finish: 49
+        )
+    )
+);
+
+$minSub : 2;
+
+$maxSub: 18;
+
+@include createRow($row, $sub, $minSub, $maxSub);
