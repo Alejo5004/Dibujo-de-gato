@@ -1,0 +1,29 @@
+@import '../create-row';
+
+$row:(
+    numberRow: 62,
+    sizeRow: #{8} / #{44}
+);
+
+$sub: (
+    1: (
+        valueColor: var(--border),
+        valueSize:(
+            begin:  1,
+            finish: 8
+        )
+    ),
+    2: (
+        valueColor: var(--border),
+        valueSize: (
+            begin:  29,
+            finish: 37
+        )
+    ),
+);
+
+$minSub : 1;
+
+$maxSub: 2;
+
+@include createRow($row, $sub, $minSub, $maxSub);

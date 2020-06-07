@@ -1,0 +1,50 @@
+@import '../create-row';
+
+$row:(
+    numberRow: 50,
+    sizeRow: #{1} / #{51}
+);
+
+$sub: (
+    1: (
+        valueColor: var(--moustache),
+        valueSize:(
+            begin:  1,
+            finish: 9
+        )
+    ),
+    2: (
+        valueColor: var(--border),
+        valueSize:(
+            begin:  9,
+            finish: 11
+        )
+    ),
+    3: (
+        valueColor: var(--secundary-color),
+        valueSize: (
+            begin:  11,
+            finish: 41
+        )
+    ),
+    4: (
+        valueColor: var(--border),
+        valueSize: (
+            begin: 41,
+            finish: 43
+        )
+    ),
+    5: (
+        valueColor: var(--moustache),
+        valueSize: (
+            begin: 43,
+            finish: 51
+        )
+    )
+);
+
+$minSub : 1;
+
+$maxSub: 5;
+
+@include createRow($row, $sub, $minSub, $maxSub);
